@@ -1,5 +1,5 @@
 {% set name = "RESTinstance" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c241e44e51c7a793c7c5ca0476caac2b703cc78da8041ab05ded965ce49bc187
+  sha256: 9c61a5d791f65bda69cc63dc84889ecd9dd7e64ec1e92423a4d7949ad3957642
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'Robot Framework library for RESTful JSON APIs'
+  summary: Robot Framework library for RESTful JSON APIs
 
 extra:
   recipe-maintainers:
