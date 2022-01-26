@@ -5,10 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  # TODO: restore after https://github.com/asyrjasalo/RESTinstance/issues/127
-  # url: https://pypi.io/packages/source/R/RESTinstance/RESTinstance-{{ version }}.tar.gz
-  url: https://github.com/asyrjasalo/RESTinstance/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7a1cb842604d3132c0c803870e6e8008b521717dc7f72b379d268e74673dda0c
+  url: https://pypi.io/packages/source/R/RESTinstance/RESTinstance-{{ version }}.tar.gz
+  sha256: 383ff5f0256fc40b2ac8b6a52535b3d15bbabc5d38a805f287bd1594a8a30a7a
 
 build:
   number: 0
