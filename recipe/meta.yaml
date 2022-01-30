@@ -34,8 +34,8 @@ requirements:
 test:
   requires:
     - pip
-    # TODO: revist after https://github.com/conda-forge/flex-swagger-feedstock/pull/8
-    - python <3.10
+    # TODO: revisit after https://github.com/conda-forge/flex-swagger-feedstock/pull/8
+    # - python <3.10
   imports:
     - REST
   commands:
