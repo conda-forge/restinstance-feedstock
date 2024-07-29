@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 package:
   name: restinstance
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/R/RESTinstance/restinstance-{{ version }}.tar.gz
-  sha256: 57df30151e715bf7d435528325bb0fd60d8fe659633d4af1ce17f25b0f888248
+  sha256: a43f3e204cee186bbf2c74d2e009c6f56c361209817073bf5ad7cfaf6ef88c8a
 
 build:
   number: 0
