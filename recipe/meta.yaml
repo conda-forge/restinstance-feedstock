@@ -5,17 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/R/RESTinstance/restinstance-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/R/RESTinstance/restinstance-{{ version }}.tar.gz
   sha256: a43f3e204cee186bbf2c74d2e009c6f56c361209817073bf5ad7cfaf6ef88c8a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
   run:
     - docutils
@@ -24,7 +24,7 @@ requirements:
     - jsonpath-ng
     - jsonschema
     - pygments
-    - python >=3.9
+    - python >={{ python_min }}
     - pytz
     - pyyaml
     - requests
@@ -34,6 +34,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - REST
   commands:
