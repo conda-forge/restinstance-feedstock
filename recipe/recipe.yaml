@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 1.5.0
+
+package:
+  name: restinstance
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/R/RESTinstance/restinstance-${{ version }}.tar.gz
+  sha256: 46761f571befd7ab679f33f3a98fa510f93221ad9ee4d51545d1a61c178fad34
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - docutils
+    - flex-swagger
+    - genson
+    - jsonpath-ng
+    - jsonschema
+    - openapi-core
+    - pygments
+    - python >=${{ python_min }}
+    - pytz
+    - pyyaml
+    - requests
+    - robotframework
+    - tzlocal
+    # undeclared, but imports pkg_resources
+    - setuptools
+
+tests:
+  - python:
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
+      imports: REST
+
+about:
+  documentation: https://asyrjasalo.github.io/RESTinstance
+  homepage: https://github.com/asyrjasalo/RESTinstance
+  license_file: LICENSE.txt
+  license: LGPL-3.0-or-later
+  summary: Robot Framework library for RESTful JSON APIs
+
+extra:
+  recipe-maintainers:
+    - abloemert
+    - bollwyvl

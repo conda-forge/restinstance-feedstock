@@ -5,9 +5,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/restinstance-fe
 
 Home: https://github.com/asyrjasalo/RESTinstance
 
-Package license: Apache-2.0
+Package license: LGPL-3.0-or-later
 
 Summary: Robot Framework library for RESTful JSON APIs
+
+Documentation: https://asyrjasalo.github.io/RESTinstance
 
 Current build status
 ====================
