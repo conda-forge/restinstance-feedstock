@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: Robot Framework library for RESTful JSON APIs
 
+Documentation: https://asyrjasalo.github.io/RESTinstance
+
 Current build status
 ====================
 
