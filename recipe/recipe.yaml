@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.5.0
+  version: "1.5.1"
 
 package:
   name: restinstance
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/R/RESTinstance/restinstance-${{ version }}.tar.gz
-  sha256: 46761f571befd7ab679f33f3a98fa510f93221ad9ee4d51545d1a61c178fad34
+  sha256: 67fc07a3870fe4269f7affd6bfed45fd1cca623114b5e7813f24073c335906cf
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
