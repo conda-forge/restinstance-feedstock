@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.5.2"
+  version: "1.5.3"
 
 package:
   name: restinstance
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/R/RESTinstance/restinstance-${{ version }}.tar.gz
-  sha256: bc66b8efdfd3fa552e55758acb8ef91c2bfab67e1533d4d8fe26378930e4ba93
+  sha256: 4a7ebabe031b27fec48e0b90f3310007dde63f6e299af4fbbbba214aa54f8a9c
 
 build:
   number: 0
