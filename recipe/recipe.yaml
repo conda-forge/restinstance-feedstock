@@ -36,9 +36,8 @@ requirements:
     - pyyaml
     - requests
     - robotframework
+    - setuptools <80
     - tzlocal
-    # undeclared, but imports pkg_resources
-    - setuptools
 
 tests:
   - python:
