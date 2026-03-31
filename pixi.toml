@@ -5,7 +5,7 @@
 
 [workspace]
 name = "restinstance-feedstock"
-version = "3.53.3"  # conda-smithy version used to generate this file
+version = "3.58.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/restinstance-feedstock"
 authors = ["@conda-forge/restinstance"]
 channels = ["conda-forge"]
