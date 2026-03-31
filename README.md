@@ -3,11 +3,13 @@ About restinstance-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/restinstance-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/asyrjasalo/RESTinstance
+Home: https://pypi.org/project/restinstance
 
 Package license: LGPL-3.0-or-later
 
 Summary: Robot Framework library for RESTful JSON APIs
+
+Development: https://github.com/asyrjasalo/RESTinstance
 
 Documentation: https://asyrjasalo.github.io/RESTinstance
 
