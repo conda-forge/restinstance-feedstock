@@ -3,6 +3,8 @@ schema_version: 1
 
 context:
   version: "1.7.0"
+  python_min: "3.11"
+  python_check_max: "3.14"
 
 package:
   name: restinstance
@@ -27,9 +29,9 @@ requirements:
     - docutils
     - flex-swagger
     - genson
-    - jsonpath-ng
+    - jsonpath-ng >=1.8.0,<1.9.0
     - jsonschema
-    - openapi-core
+    - openapi-core >=0.23.0
     - pygments
     - python >=${{ python_min }}
     - pytz
@@ -44,15 +46,16 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
       imports: REST
 
 about:
-  documentation: https://asyrjasalo.github.io/RESTinstance
-  homepage: https://github.com/asyrjasalo/RESTinstance
+  summary: Robot Framework library for RESTful JSON APIs
   license_file: LICENSE.txt
   license: LGPL-3.0-or-later
-  summary: Robot Framework library for RESTful JSON APIs
+  homepage: https://pypi.org/project/restinstance
+  repository: https://github.com/asyrjasalo/RESTinstance
+  documentation: https://asyrjasalo.github.io/RESTinstance
 
 extra:
   recipe-maintainers:
