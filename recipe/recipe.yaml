@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.7.0"
+  version: "1.8.0"
   python_min: "3.11"
   python_check_max: "3.14"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/R/RESTinstance/restinstance-${{ version }}.tar.gz
-  sha256: 1387bc4d257c0ba98d8b963e1f31e5d49e32e1286ddf317de575d96d73fe70ed
+  sha256: a9dd7e58699e6aa972da20ccc2c5feca95327d53b78c4199408a0cf78fe5bd61
 
 build:
   number: 0
